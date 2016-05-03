@@ -12,11 +12,11 @@ class RestaurantTest < ActiveSupport::TestCase
     assert_not r.errors[:name].any?
   end
   test "restaurant name must be unique 1" do
-    a = Restaurant.new(name: "Firmin's Place")
-    b = Restaurant.new(name: "Firmin's Place")
+    a = Restaurant.new(name: restaurants(:one).name)
 
-    assert b.invalid?
-    assert b.errors[:name].any?
+    assert a.invalid?
+    assert_equal ["has already been taken"],
+                 a.errors[:name]
   end
   test "restaurant name must be unique 2" do
     a = Restaurant.new(name: "Firmin's Place")

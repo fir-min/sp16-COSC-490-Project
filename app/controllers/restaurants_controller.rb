@@ -2,10 +2,10 @@ class RestaurantsController < ApplicationController
 
   def create
     @restaurant = Restaurant.new(params.require(:restaurant).permit(:name))
-    if @list.save
-      flash[:notice] = "Your list was created"
+    if @restaurant.save
+      flash[:notice] = "Your restauraunt was created"
     else
-      flash[:alert] = "There was an error creating your list."
+      flash[:alert] = "There was an error creating your restaurant."
     end
   end
 
