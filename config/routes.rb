@@ -11,4 +11,8 @@ Rails.application.routes.draw do
   get '/cart/clear' => 'cart#clearCart'
   get '/cart/:id' => 'cart#add'
 
+  get 'home/about'
+  get 'home/faqs'
+  get 'home/contact'
+
 end
