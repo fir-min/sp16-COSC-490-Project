@@ -1,6 +1,6 @@
 <%= form_tag charges_path do %>
 <% $amount = amount %>
-<%= debug $amount %>
+
   <article>
     <% if flash[:error].present? %>
       <div id="error_explanation">
@@ -8,7 +8,7 @@
       </div>
     <% end %>
     <label class="amount">
-      <span>Amount: $<%amount%></span>
+      <span><b>Amount: $<%=$amount%></b></span>
     </label>
   </article>
 
