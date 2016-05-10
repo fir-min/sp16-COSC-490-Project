@@ -1,12 +1,13 @@
 <p id="notice"><%= notice %></p>
-<p>
-  <p><h1><%= @restaurant.name %></strong></h1>
+
+  <p><h1><%= @restaurant.name %></strong></h1></p>
   <br>
-  <p><strong><%= @menu.name %></strong></p>
-</p>
+
+
 
 <div>
-  <%= render @menu.menu_items %>
+  <%= render partial: 'menu_items/items', locals: {restaurant: @restaurant, menu: @menu} %>
+
   <br>
   <br>
   <div>

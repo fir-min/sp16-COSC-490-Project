@@ -1,0 +1,22 @@
+<table border=0 style='width: 80%;'>
+  <thead>
+    <tr>
+      <th colspan="5"><p><strong><%= menu.name %></strong></p></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @menu.menu_items.each do |item| %>
+      <tr>
+        <td><%= image_tag item.image %></td>
+        <td><%= item.name %></td>
+        <td><%= item.description %></td>
+        <td><%= item.price %></td>
+        <td><%= link_to 'Add to Cart', url_for(action: 'add', controller: 'cart', id: item.id) %></td>
+
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>

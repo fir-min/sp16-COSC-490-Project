@@ -9,16 +9,18 @@
 
 <% total = 0%>
 <ul>
-  <% @cart.each do |id, price| %>
-      <% menuItem = MenuItem.find_by_id(id) %>
+  <% @cart.each do |id, quantity| %>
+      <% item = MenuItem.find_by_id(id) %>
 
       <li>
-        <%= link_to menuItem.name, menuItem %>
-        <p><%= number_to_currency(menuItem.price, :unit => '$') %></p>
+        <%= link_to item.name, url_for(action: 'show', controller: 'menu_items', id: item.id) %>
+        <p><%= number_to_currency(item.price, :unit => '$') %></p>
+        <p>Quantity: <%= quantity %></p>
       </li>
-      <% total += menuItem.price %>
+      <% total += quantity*item.price %>
+
   <% end %>
-  <% total += 20%>
-  <%= render partial: 'charges/new', locals: {amount: total} %>
-  
+
 </ul>
+
+<%= render partial: 'charges/new', locals: {amount: total} %>

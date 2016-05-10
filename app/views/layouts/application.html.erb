@@ -2,6 +2,7 @@
 <html>
 <head>
   <title>Yumm!</title>
+  <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
@@ -13,6 +14,7 @@
       <%= link_to "About Us", home_about_path %>
       <%= link_to "Contact Us", home_contact_path %>
       <%= link_to "FAQS", home_faqs_path %>
+      <%= link_to "Restaurants", restaurants_path %>
     </div>
     <div class='auth'>
       <% if user_signed_in? %>
@@ -23,10 +25,14 @@
       <% end %>
     </div>
   </nav>
-  <div class='yield'>
-    <%= yield %>
+  <br>
+  <div class='w3-container w3-centered w3-padding-xxlarge', style='height: 600px; width: 80%;'>
+    <br>
+    <div class="w3-container w3-padding-xxlarge">
+      <%= yield %>
+    </div>
   </div>
-
+  <br>
   <footer class="footer nav">
     <div class='pages'>
       <%= link_to "Home", root_path %>

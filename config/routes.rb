@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
 
-
+  get '/menu_items/:id' => 'menu_items#show'
 
 
   resources :restaurants do
