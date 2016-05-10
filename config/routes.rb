@@ -1,6 +1,16 @@
 Rails.application.routes.draw do
 
 
+
+
+  resources :restaurants do
+    resources :menus do
+      resources :menu_items
+    end
+  end
+
+
+
   resource :charges
 
   devise_for :users, controllers: {omniauth_callbacks: "omniauth_callbacks"}

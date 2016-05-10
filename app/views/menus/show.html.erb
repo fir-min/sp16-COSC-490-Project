@@ -1,0 +1,17 @@
+<p id="notice"><%= notice %></p>
+<p>
+  <p><h1><%= @restaurant.name %></strong></h1>
+  <br>
+  <p><strong><%= @menu.name %></strong></p>
+</p>
+
+<div>
+  <%= render @menu.menu_items %>
+  <br>
+  <br>
+  <div>
+    <%= render "menu_items/form"%>
+  </div>
+</div>
+
+<%= link_to 'Back', restaurant_path(@restaurant), method: :get %>

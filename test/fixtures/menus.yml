@@ -2,6 +2,8 @@
 
 one:
   name: MyString
+  restaurant_id: 
 
 two:
   name: MyString
+  restaurant_id: 

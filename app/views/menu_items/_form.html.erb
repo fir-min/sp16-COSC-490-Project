@@ -1,0 +1,10 @@
+<%= form_for([@restaurant, @menu, @menu.menu_items.build]) do |f| %>
+  <p>Name: </p>
+  <%= f.text_field :name, placeholder: "new item" %>
+  <p>Price: </p>
+  <%= f.number_field :price, :step => 0.01%>
+  <p>Description: </p>
+  <%= f.text_area :description%>
+
+  <p><%= f.submit %></p>
+<% end %>

@@ -1,0 +1,4 @@
+<%= form_for([@restaurant, @restaurant.menus.build]) do |f| %>
+  <%= f.text_field :name, placeholder: "new menu" %>
+  <%= f.submit %>
+<% end %>

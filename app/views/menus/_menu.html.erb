@@ -1,0 +1,3 @@
+<p><%= menu.name %>
+<%= link_to "Show", restaurant_menu_path(@restaurant, menu.id), method: :get%>
+<%= link_to "Delete", restaurant_menu_path(@restaurant, menu.id), method: :delete, data: {confirm: "are you sure?"}%></p>
