@@ -26,7 +26,7 @@
     </div>
   </nav>
   <br>
-  <div class='w3-container w3-centered w3-padding-xxlarge', style='height: 600px; width: 80%;'>
+  <div class='w3-container w3-centered w3-padding-xxlarge', style='width: 80%;'>
     <br>
     <div class="w3-container w3-padding-xxlarge">
       <%= yield %>
@@ -44,6 +44,18 @@
       <%= link_to "Locations", home_faqs_path %>
     </div>
   </footer>
+
+  <script>
+  var acc = document.getElementsByClassName("accordion");
+  var i;
+
+  for (i = 0; i < acc.length; i++) {
+      acc[i].onclick = function(){
+          this.classList.toggle("active");
+          this.nextElementSibling.classList.toggle("show");
+    }
+  }
+  </script>
 
 </body>
 </html>

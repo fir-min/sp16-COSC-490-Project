@@ -7,5 +7,6 @@
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 Restaurant.delete_all
 User.delete_all
-Restaurant.create(name: 'Firmins Place')
-User.create(email: 'firminsa@gmail.com')
+a = Restaurant.create(name: 'Firmins Place', logo: 'http://placekitten.com/75/75')
+b = Restaurant.create(name: 'Pizza Pizza',  logo: 'http://placekitten.com/75/75')
+c = Restaurant.create(name: 'Juice', logo: 'http://placekitten.com/75/75')

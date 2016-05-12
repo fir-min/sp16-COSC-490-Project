@@ -13,7 +13,7 @@
       <% item = MenuItem.find_by_id(id) %>
 
       <li>
-        <%= link_to item.name, url_for(action: 'show', controller: 'menu_items', id: item.id) %>
+        <%= link_to item.name, url_for(action: 'show', controller: 'menu_items', id: item.id), method: :get %>
         <p><%= number_to_currency(item.price, :unit => '$') %></p>
         <p>Quantity: <%= quantity %></p>
       </li>

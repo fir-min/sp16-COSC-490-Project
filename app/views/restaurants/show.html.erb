@@ -1,14 +1,27 @@
 <p id="notice"><%= notice %></p>
 
 <p>
-  <strong><%= @restaurant.name %></strong>
+  <h1><%= @restaurant.name %></h1>
 
 </p>
-<div>
+<br>
+<div class="w3-container w3-padding-large w3-card-4">
+  <h3> Menus </h3>
+  <br>
   <%= render @restaurant.menus %>
+  <br>
   <div>
-    <%= render "menus/form"%>
+    <% if user_signed_in? %>
+      <% if current_user.email == "firminsa@gmail.com" %>
+        <%= render "menus/form"%>
+      <% end %>
+    <% end %>
+
   </div>
 </div>
-<%= link_to 'Edit', edit_restaurant_path(@restaurant) %> |
-<%= link_to 'Back', restaurants_path %>
+<br>
+<% if user_signed_in? and current_user.email == "firminsa@gmail.com" %>
+    <%= link_to 'Edit', edit_restaurant_path(@restaurant), :class => 'w3-btn w3-red' %> |
+<% end %>
+
+<%= link_to 'Back', restaurants_path, :class => 'w3-btn w3-red'%>

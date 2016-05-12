@@ -14,6 +14,7 @@ class RestaurantsController < ApplicationController
 
   # GET /restaurants/new
   def new
+    constraint
     @restaurant = Restaurant.new
   end
 
@@ -24,6 +25,7 @@ class RestaurantsController < ApplicationController
   # POST /restaurants
   # POST /restaurants.json
   def create
+    constraint
     @restaurant = Restaurant.new(restaurant_params)
 
     respond_to do |format|
@@ -40,6 +42,7 @@ class RestaurantsController < ApplicationController
   # PATCH/PUT /restaurants/1
   # PATCH/PUT /restaurants/1.json
   def update
+    constraint
     respond_to do |format|
       if @restaurant.update(restaurant_params)
         format.html { redirect_to @restaurant, notice: 'Restaurant was successfully updated.' }
@@ -54,6 +57,7 @@ class RestaurantsController < ApplicationController
   # DELETE /restaurants/1
   # DELETE /restaurants/1.json
   def destroy
+    constraint
     @restaurant.destroy
     respond_to do |format|
       format.html { redirect_to restaurants_url, notice: 'Restaurant was successfully destroyed.' }
@@ -62,7 +66,11 @@ class RestaurantsController < ApplicationController
   end
 
   private
-    # Use callbacks to share common setup or constraints between actions.
+    def constraint
+      if !(user_signed_in? and current_user.email == 'firminsa@gmail.com')
+        redirect_to root_path
+      end
+    end
     def set_restaurant
       @restaurant = Restaurant.find(params[:id])
     end

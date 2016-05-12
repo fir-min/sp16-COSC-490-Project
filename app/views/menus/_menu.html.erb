@@ -1,3 +1,11 @@
-<p><%= menu.name %>
-<%= link_to "Show", restaurant_menu_path(@restaurant, menu.id), method: :get%>
-<%= link_to "Delete", restaurant_menu_path(@restaurant, menu.id), method: :delete, data: {confirm: "are you sure?"}%></p>
+<button class="accordion"><%= menu.name %></button>
+<div class="panel w3-container w3-padding-large">
+  <div class='w3-container w3-padding-large'>
+    <%= render partial: 'menu_items/items', locals: {restaurant: @restaurant, menu: menu} %>
+  </div>
+  <% if user_signed_in? and current_user.email == "firminsa@gmail.com"%>
+    <%= render partial: 'menu_items/form', locals: {restaurant: @restaurant, menu: menu} %>
+  <% end %>
+
+
+</div>

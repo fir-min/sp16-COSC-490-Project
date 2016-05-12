@@ -11,8 +11,12 @@
   <br>
   <br>
   <div>
-    <%= render "menu_items/form"%>
+    <% if user_signed_in? and current_user.email == "firminsa@gmail.com" %>
+      <%= render partial: 'menu_items/form', locals: {restaurant: @restaurant, menu: @menu} %>
+    <% end %>
+
+
   </div>
 </div>
 
-<%= link_to 'Back', restaurant_path(@restaurant), method: :get %>
+<%= link_to 'Back', restaurant_path(@restaurant), method: :get, :class => 'w3-btn' %>

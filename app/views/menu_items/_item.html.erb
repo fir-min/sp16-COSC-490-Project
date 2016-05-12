@@ -1,5 +1,3 @@
-
-
 <table border=0  class="w3-table w3-large w3-striped w3-card-4">
   <thead>
     <tr>
@@ -8,7 +6,7 @@
   </thead>
 
   <tbody>
-    <% menu.menu_items.each do |item| %>
+
       <tr class='height01'>
         <td class='valign'><%= image_tag item.image %></td>
         <td class='valign'><%= item.name %></td>
@@ -17,8 +15,6 @@
         <td class='valign'><%= link_to 'Add to Cart', url_for(action: 'add', controller: 'cart', id: item.id), :class => 'w3-btn w3-red' %></td>
 
       </tr>
-    <% end %>
+
   </tbody>
 </table>
-
-<br>

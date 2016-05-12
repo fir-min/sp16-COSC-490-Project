@@ -1,12 +1,17 @@
 class MenuItemsController < ApplicationController
-  before_action :set_menu, :set_restaurant
+
   def create
-    @menu_item = @menu.menu_items.create(menu_items_params)
-    redirect_to restaurant_menu_path(@restaurant, @menu.id)
+    constraint
+    set_restaurant
+    set_menu
+    @menu_item = @menu.menu_items.create(menu_item_params)
+    redirect_to restaurant_path(@restaurant)
   end
 
   def destroy
+    constraint
     @menu_item = MenuItem.find(params[:id])
+    @menu = @menu_item.menu
     if @menu_item.destroy
       flash[:sucsess] = "Menu Item was deleted"
     else
@@ -15,12 +20,23 @@ class MenuItemsController < ApplicationController
     redirect_to restaurant_menu_path(@menu)
   end
 
-  def edit
-
+  def show
+    set_menu_item
   end
 
+  
 
   private
+
+  def constraint
+    if !(user_signed_in? and current_user.email == 'firminsa@gmail.com')
+      redirect_to root_path
+    end
+  end
+
+  def set_menu_item
+    @menu_item = MenuItem.find(params[:id])
+  end
 
   def set_restaurant
      @restaurant = Restaurant.find(params[:restaurant_id])
@@ -30,7 +46,7 @@ class MenuItemsController < ApplicationController
     @menu = Menu.find(params[:menu_id])
   end
 
-  def menu_items_params
+  def menu_item_params
     params[:menu_item].permit(:name, :price, :description, :image)
   end
 end

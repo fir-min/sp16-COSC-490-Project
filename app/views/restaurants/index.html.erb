@@ -2,26 +2,31 @@
 
 <h1>Listing Restaurants</h1>
 
-<table>
+<table border=0  class="w3-table w3-large w3-striped w3-card-4">
   <thead>
     <tr>
-      <th>Name</th>
-      <th colspan="3"></th>
+      <th colspan='4'></th>
+
     </tr>
   </thead>
 
   <tbody>
     <% @restaurants.each do |restaurant| %>
-      <tr>
-        <td><%= restaurant.name %></td>
-        <td><%= link_to 'Show', restaurant %></td>
-        <td><%= link_to 'Edit', edit_restaurant_path(restaurant) %></td>
-        <td><%= link_to 'Destroy', restaurant, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
+      <tr class='height02'>
+        <% if user_signed_in? and current_user.email == "firminsa@gmail.com" %>
+          <td class='valign'><%= image_tag restaurant.logo %></td>
+          <td class='valign'><%= link_to restaurant.name, restaurant_path(restaurant), method: :get, :class => 'no-decoration' %></td>
+          <td class='valign'><%= link_to 'Edit', edit_restaurant_path(restaurant), :class => 'no-decoration' %></td>
+          <td class='valign'><%= link_to 'Destroy', restaurant, method: :delete, :class => 'no-decoration', data: { confirm: 'Are you sure?' } %></td>
+        <% else %>
+          <td colspan="2" class='valign'><%= image_tag restaurant.logo %></td>
+          <td colspan="2" class='valign'><%= link_to restaurant.name, restaurant_path(restaurant), method: :get, :class => 'no-decoration' %></td>
+        <% end %>
     <% end %>
   </tbody>
 </table>
 
 <br>
-
-<%= link_to 'New Restaurant', new_restaurant_path %>
+<% if user_signed_in? and current_user.email == "firminsa@gmail.com"  %>
+    <%= link_to 'New Restaurant', new_restaurant_path, :class => 'w3-btn w3-red' %>
+<% end %>

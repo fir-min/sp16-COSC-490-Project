@@ -32,7 +32,7 @@ ActiveRecord::Schema.define(version: 20160510005207) do
 
   create_table "restaurants", force: :cascade do |t|
     t.string   "name"
-    t.string   "image"
+    t.string   "logo"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

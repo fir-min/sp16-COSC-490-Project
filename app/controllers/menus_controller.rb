@@ -1,6 +1,7 @@
 class MenusController < ApplicationController
   before_action :set_restaurant
   def create
+    constraint
     @menu = @restaurant.menus.create(menu_params)
     redirect_to restaurant_path(@restaurant)
   end
@@ -10,6 +11,7 @@ class MenusController < ApplicationController
   end
 
   def destroy
+    constraint
     @menu = Menu.find(params[:id])
     if @menu.destroy
       flash[:sucsess] = "Menu was deleted"
@@ -20,6 +22,12 @@ class MenusController < ApplicationController
   end
 
   private
+
+  def constraint
+    if !(user_signed_in? and current_user.email == 'firminsa@gmail.com')
+      redirect_to root_path
+    end
+  end
 
   def set_restaurant
     @restaurant = Restaurant.find(params[:restaurant_id])
