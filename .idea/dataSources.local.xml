@@ -1,6 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="dataSourceStorageLocal">
-    <data-source name="development" uuid="10ea6371-f625-4245-94ea-4b29416a4933" />
+    <data-source name="Rails sp16-COSC-490-Project: production" uuid="70eb545a-46df-421a-9e93-d422d5ca6318">
+      <user-name>snow</user-name>
+      <user-password>dfdadfcbdfd9dfd9dfdddfc5dfd8dfce</user-password>
+    </data-source>
+    <data-source name="Rails sp16-COSC-490-Project: test" uuid="58412085-60b0-4713-9781-681637833c30">
+      <user-name>snow</user-name>
+      <user-password>dfdadfcbdfd9dfd9dfdddfc5dfd8dfce</user-password>
+    </data-source>
+    <data-source name="Rails sp16-COSC-490-Project: development" uuid="aa8e0e65-412e-455e-aa02-fc1377ec2fe7">
+      <user-name>snow</user-name>
+      <user-password>dfdadfcbdfd9dfd9dfdddfc5dfd8dfce</user-password>
+      <schema-pattern>development.pg_catalog development.public</schema-pattern>
+      <default-schemas>development.public</default-schemas>
+    </data-source>
   </component>
 </project>
