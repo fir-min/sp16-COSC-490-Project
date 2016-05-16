@@ -1,22 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9f68f58e-4642-4d4b-b6f4-5a5f8e49bdc4" name="Default" comment="Added the models and controllers for restaurant, menu, and menu items. Added the database tables for them as well.">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/images/Yumm!-2.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/images/food-03.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/images/rsz_fima.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/images/rsz_firmin.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/images/rsz_sam.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/application.css" afterPath="$PROJECT_DIR$/app/assets/stylesheets/application.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/home.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/home.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/restaurants.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/restaurants.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/home/about.html.erb" afterPath="$PROJECT_DIR$/app/views/home/about.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/home/contact.html.erb" afterPath="$PROJECT_DIR$/app/views/home/contact.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/home/faqs.html.erb" afterPath="$PROJECT_DIR$/app/views/home/faqs.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/home/home.html.erb" afterPath="$PROJECT_DIR$/app/views/home/home.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/restaurants/index.html.erb" afterPath="$PROJECT_DIR$/app/views/restaurants/index.html.erb" />
-    </list>
+    <list default="true" id="9f68f58e-4642-4d4b-b6f4-5a5f8e49bdc4" name="Default" comment="Added the models and controllers for restaurant, menu, and menu items. Added the database tables for them as well." />
     <ignored path="sp16-COSC-490-Project.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/.bundle/" />
@@ -82,8 +67,8 @@
       <file leaf-file-name="application.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/application.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.6921529">
-              <caret line="119" column="10" selection-start-line="119" selection-start-column="10" selection-end-line="119" selection-end-column="10" />
+            <state vertical-scroll-proportion="0.79476863">
+              <caret line="109" column="0" selection-start-line="109" selection-start-column="0" selection-end-line="109" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -168,7 +153,6 @@
         <option value="$PROJECT_DIR$/app/assets/javascripts/home.js" />
         <option value="$PROJECT_DIR$/Gemfile" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/application.js" />
-        <option value="$PROJECT_DIR$/app/assets/stylesheets/application.css" />
         <option value="$PROJECT_DIR$/app/views/home/home.html.erb" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/restaurants.scss" />
         <option value="$PROJECT_DIR$/app/views/home/about.html.erb" />
@@ -176,6 +160,7 @@
         <option value="$PROJECT_DIR$/app/views/home/faqs.html.erb" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/home.scss" />
         <option value="$PROJECT_DIR$/app/views/restaurants/index.html.erb" />
+        <option value="$PROJECT_DIR$/app/assets/stylesheets/application.css" />
       </list>
     </option>
   </component>
@@ -858,7 +843,7 @@
     <option name="totallyTimeSpent" value="8305000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="784" extended-state="7" />
+    <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25869894" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -1239,8 +1224,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/application.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6921529">
-          <caret line="119" column="10" selection-start-line="119" selection-start-column="10" selection-end-line="119" selection-end-column="10" />
+        <state vertical-scroll-proportion="0.79476863">
+          <caret line="109" column="0" selection-start-line="109" selection-start-column="0" selection-end-line="109" selection-end-column="0" />
           <folding />
         </state>
       </provider>
