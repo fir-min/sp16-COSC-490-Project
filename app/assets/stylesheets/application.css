@@ -107,3 +107,13 @@ div.body {
  .red {
    background: #bc2031;
  }
+
+ .fsa-center {
+   width: 100%;
+ }
+
+ .fsa-center-2 {
+   width: 80%;
+   margin-left: 10%;
+   margin-right: 10%;
+ }
