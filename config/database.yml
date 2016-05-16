@@ -1,11 +1,9 @@
 development:
-  adapter: postgresql
-  encoding: unicode
-  database: development
-  host: localhost
+  adapter: sqlite3
   pool: 5
-  username: snow
-  password: password
+  timeout: 5000
+  database: db/development.sqlite3
+
 
 test:
   adapter: postgresql
