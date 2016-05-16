@@ -1,9 +1,79 @@
-// Place all the styles related to the home controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
-body {
-  background-image: url(asset-path('feature.jpg'));
-  background-repeat: no-repeat;
-  background-size: 100%;
-  background-attachment: fixed;
+.row {
+  margin-right: -200px;
+  margin-left: 75px;
+
+  box-shadow:  -1px 1px #77aaff,
+  -2px 2px #77aaff,
+  -3px 3px #77aaff,
+  -4px 4px #77aaff,
+  -5px 5px #77aaff;
+  border-radius: 5%;
+}
+
+.col-lg-12 {
+  width: 100%;
+
+}
+
+
+.col-lg-4 .col-sm-6 .col-lg-12 {
+  position: relative;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+  display: inline-block;
+  margin-bottom: 100px;
+}
+
+.page-header {
+  padding-bottom: 9px;
+  margin: 40px 0 20px;
+  border-bottom: 1px solid #eee;
+}
+
+@media (min-width: 1200px) {
+  .col-lg-12 {
+    float: left;
+  }
+  .col-lg-12 {
+    width: 100%;
+  }
+}
+  body {
+    background-image: url(asset-path('food-03.jpg'));
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-attachment: fixed;
+  }
+  body{
+
+    margin: 0;
+  }
+
+.text-center {
+  text-align: center;
+}
+
+.img-circle {
+  border-radius: 50%;
+}
+
+.yumm {
+  position: absolute;
+  z-index: 100;
+  width: 200px;
+}
+.yumm img {
+  display: block;
+  position: center;
+  z-index: 50;
+  width: 100%;
+}
+
+div{
+  width: 100%;
+}
+
+.transparent{
+  background:rgba(255,255,255,0.58);
 }
