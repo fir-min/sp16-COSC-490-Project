@@ -14,9 +14,11 @@ class ChargesController < ApplicationController
 	    :source  => params[:stripeToken]
 	  )
 
+    total = Integer ($amount.round(2)*100)
+
 	  charge = Stripe::Charge.create(
 	    :customer    => customer.id,
-	    :amount      => $amount*100,
+	    :amount      => total,
 	    :description => 'Rails Stripe customer',
 	    :currency    => 'usd'
 	  )

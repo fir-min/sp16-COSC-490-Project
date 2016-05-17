@@ -2,16 +2,15 @@
 <html>
 <head>
   <title>Yumm!</title>
-
   <%= stylesheet_link_tag    'w3.css', media: 'all', 'data-turbolinks-track' => true %>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
 <body>
-  <nav class='nav'>
+  <nav class='w3-navbar w3-hover-grey red-font'>
     <div class='pages'>
-      <%= link_to "Home", root_path %>
+      <%= link_to image_tag("yumm-small.png"), root_path %>
       <%= link_to "About Us", home_about_path %>
       <%= link_to "Contact Us", home_contact_path %>
       <%= link_to "FAQS", home_faqs_path %>
@@ -34,9 +33,10 @@
     </div>
   </div>
   <br>
-  <footer class="footer nav">
+  <footer class="w3-navbar w3-hover-grey red-font">
     <div class='pages'>
-      <%= link_to "Home", root_path %>
+
+      <%= link_to image_tag("yumm-small.png"), root_path %>
       <%= link_to "About Us", home_about_path %>
       <%= link_to "Contact Us", home_contact_path %>
       <%= link_to "FAQS", home_faqs_path %>

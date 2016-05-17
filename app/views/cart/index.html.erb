@@ -3,23 +3,29 @@
 <% if @cart.empty? %>
     <p>Your cart is currently empty</p>
 <% else %>
-    <%= link_to 'Empty Your Cart', cart_clear_path %>
+    <%= link_to 'Empty Your Cart', cart_clear_path, :class => 'w3-btn w3-red' %>
 <% end %>
 <br/><br/><br/>
 
 <% total = 0%>
-<ul>
+<table border=0  class="w3-table w3-tiny w3-striped w3-card-4 transparent">
+  <tbody>
+
   <% @cart.each do |id, quantity| %>
       <% item = MenuItem.find_by_id(id) %>
+      <tr class='height02'>
+        <td class='valign'><%= image_tag item.image, :size => "100x100" %></td>
+        <td class='valign'><%= link_to item.name, url_for(action: 'show',
+        controller: 'menu_items', id: item.id), :class => 'w3-btn w3-red' ,method: :get %></td>
+        <td class='valign'><%= number_to_currency(item.price, :unit => '$') %></td>
+        <td class='valign'><%= quantity %></td>
+      </tr>
 
-      <li>
-        <%= link_to item.name, url_for(action: 'show', controller: 'menu_items', id: item.id), method: :get %>
-        <p><%= number_to_currency(item.price, :unit => '$') %></p>
-        <p>Quantity: <%= quantity %></p>
-      </li>
       <% total += quantity*item.price %>
 
   <% end %>
+  </tbody>
+</table>
 
 </ul>
 

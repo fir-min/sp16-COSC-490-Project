@@ -23,6 +23,14 @@ div.body {
   min-height: 550px;
 }
 
+.red-font {
+  color:#fff!important;
+}
+
+.red-font:hover {
+  color:white;
+}
+
 .nav {
   width:100%;
   height: 40px;
@@ -31,17 +39,22 @@ div.body {
 
 .pages a, .auth a {
   line-height: 40px;
-  color: #fff;
   padding: 0 20px 0 20px;
   text-decoration: none;
+  background: none;
+}
+.lined {
+  display:inline;
 }
 .pages {
+   position:relative;
    float: left;
    margin: 0 0 0 5%;
  }
 .auth {
    float: right;
    margin: 0 5% 0 0;
+   position:relative;
  }
 .footer a {
   line-height: 40px;
@@ -68,6 +81,7 @@ div.body {
      font-size: 15px;
      transition: 0.4s;
  }
+
 
  button.accordion.active, button.accordion:hover {
      background-color: #ddd;
