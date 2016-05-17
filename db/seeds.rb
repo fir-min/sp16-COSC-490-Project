@@ -6,64 +6,64 @@ a_m1 = a.menus.create(name: 'Main')
 a_m2 = a.menus.create(name: 'Desserts')
 a_m3 = a.menus.create(name: 'Kids')
 
-a_m1.menu_items.create(name: 'main 01', price: 5.99,
-description: 'Lorem ipsum dolor sit amet, quod copiosae per ne',
+a_m1.menu_items.create(name: 'BBQ Pulled Pork', price: 5.99,
+description: 'Our slowe cooked pork, served on a fresh bun, with fries on the side',
 image: 'http://placekitten.com/150/150')
 
-a_m1.menu_items.create(name: 'main 02', price: 7.99,
-description: 'Lorem ipsum dolor sit amet, quod copiosae per ne',
+a_m1.menu_items.create(name: 'Chicken Fried Steak', price: 7.99,
+description: "Can't decide between chicken or steak? Have both!!",
 image: 'http://placekitten.com/150/150')
 
-a_m1.menu_items.create(name: 'main 03', price: 2.99,
-description: 'Lorem ipsum dolor sit amet, quod copiosae per ne',
+a_m1.menu_items.create(name: 'Wings Wings Wings', price: 2.99,
+description: 'Wings seasoned to perfection, served with our famous sauce',
 image: 'http://placekitten.com/150/150')
 
-a_m1.menu_items.create(name: 'main 04', price: 9.99,
-description: 'Est adipisci liberavisse eu, mea melius iisque omittantur eu.',
+a_m1.menu_items.create(name: 'Loaded Nachos', price: 9.99,
+description: 'Nachos!! Loaded!! Nuff Said',
 image: 'http://placekitten.com/150/150')
 
-a_m1.menu_items.create(name: 'main 05', price: 6.00,
-description: 'Est adipisci liberavisse eu, mea melius iisque omittantur eu.',
+a_m1.menu_items.create(name: 'The Club', price: 6.00,
+description: "Our club sandwich, will make you feel like you're in a club.",
 image: 'http://placekitten.com/150/150')
 
-a_m2.menu_items.create(name: 'dessert 01', price: 5.99,
-description: 'Lorem ipsum dolor sit amet, quod copiosae per ne',
+a_m2.menu_items.create(name: 'Stawberry Short Cake', price: 5.99,
+description: "Stawberries and cake, there's nothing better",
 image: 'http://placekitten.com/150/150')
 
-a_m2.menu_items.create(name: 'dessert 02', price: 7.99,
-description: 'Lorem ipsum dolor sit amet, quod copiosae per ne',
+a_m2.menu_items.create(name: 'Carrot Cake', price: 7.99,
+description: 'Concerned about your health? We got you covered',
 image: 'http://placekitten.com/150/150')
 
-a_m2.menu_items.create(name: 'dessert 03', price: 2.99,
-description: 'Lorem ipsum dolor sit amet, quod copiosae per ne',
+a_m2.menu_items.create(name: 'Fried Oreos', price: 2.99,
+description: 'Fried Oreos served with milk',
 image: 'http://placekitten.com/150/150')
 
-a_m2.menu_items.create(name: 'dessert 04', price: 9.99,
-description: 'Est adipisci liberavisse eu, mea melius iisque omittantur eu.',
+a_m2.menu_items.create(name: "Not Your Mama's Ice Cream", price: 9.99,
+description: 'Homemade ice cream with a bourbon kick',
 image: 'http://placekitten.com/150/150')
 
-a_m2.menu_items.create(name: 'dessert 05', price: 6.00,
-description: 'Est adipisci liberavisse eu, mea melius iisque omittantur eu.',
+a_m2.menu_items.create(name: 'Apple Pie', price: 6.00,
+description: 'Pies baked to perfection in our almond meal crust',
 image: 'http://placekitten.com/150/150')
 
-a_m3.menu_items.create(name: 'kids 01', price: 5.99,
-description: 'Lorem ipsum dolor sit amet, quod copiosae per ne',
+a_m3.menu_items.create(name: 'Mac n Cheeze', price: 5.99,
+description: 'Mac + delicious white cheddar',
 image: 'http://placekitten.com/150/150')
 
-a_m3.menu_items.create(name: 'kids 02', price: 7.99,
-description: 'Lorem ipsum dolor sit amet, quod copiosae per ne',
+a_m3.menu_items.create(name: 'Sweet Spuds', price: 7.99,
+description: 'Sweet Potatoes',
 image: 'http://placekitten.com/150/150')
 
-a_m3.menu_items.create(name: 'kids 03', price: 2.99,
-description: 'Lorem ipsum dolor sit amet, quod copiosae per ne',
+a_m3.menu_items.create(name: 'Hot Dogs', price: 2.99,
+description: '3 all beef franks!!',
 image: 'http://placekitten.com/150/150')
 
-a_m3.menu_items.create(name: 'kids 04', price: 9.99,
-description: 'Est adipisci liberavisse eu, mea melius iisque omittantur eu.',
+a_m3.menu_items.create(name: 'Sliders', price: 9.99,
+description: 'Sliding to a table near you',
 image: 'http://placekitten.com/150/150')
 
-a_m3.menu_items.create(name: 'kids 05', price: 6.00,
-description: 'Est adipisci liberavisse eu, mea melius iisque omittantur eu.',
+a_m3.menu_items.create(name: 'Chicken Tenders', price: 6.00,
+description: 'Baked chicken tenders',
 image: 'http://placekitten.com/150/150')
 
 
